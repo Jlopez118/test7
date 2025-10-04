@@ -1,0 +1,97 @@
+/* Fondo espacial */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://science.nasa.gov/wp-content/uploads/2023/03/main-image-star-forming-region-carina-nircam-final-5mb-1-jpeg.webp?w=1536') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* Oscurecer con overlay */
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,20,0.6);
+    z-index: 0;
+}
+
+/* Contenido centrado */
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 20px cyan;
+}
+
+/* Texto */
+p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Tarjetas / menú */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0,255,255,0.7);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+/* OpenSeadragon */
+#openseadragon1 {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.9);
+    border: 2px solid #444;
+    position: relative;
+    z-index: 0;
+}
+
+/* POI Markers */
+.poi-marker {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.poi-marker:hover {
+  transform: scale(1.5);
+  background-color: yellow;
+}

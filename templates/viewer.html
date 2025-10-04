@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visor Estelar</title>
+
+  <!-- Fuente espacial -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!-- OpenSeadragon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <!-- Overlay oscuro -->
+  <div class="overlay"></div>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+      <h1>Mapa Estelar: PIA03653</h1>
+      <p>Explora los puntos de interés haciendo click en los marcadores.</p>
+
+      <!-- Tarjetas / menú -->
+      <div class="cards" id="menu-cards">
+          <!-- Se generarán dinámicamente con JS si quieres -->
+      </div>
+  </div>
+
+  <!-- Contenedor de OpenSeadragon -->
+  <div id="openseadragon1"></div>
+
+  <!-- Tu script -->
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+  { "name": "Estrella X", "x": 5000, "y": 3000, "info": "Gigante roja en el brazo de Orión" },
+  { "name": "Nebulosa Y", "x": 12000, "y": 8000, "info": "Nebulosa de emisión brillante" },
+  { "name": "Planeta Z", "x": 8000, "y": 15000, "info": "Planeta enana con atmósfera tenue" }
+]
